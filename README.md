@@ -13,8 +13,8 @@ Final project for the first Acámica module (CSS)
 > ## Viewports
 
 1. Movil view (less than 600px).
-2. Tabletview `dark mode` (from 600px to 1439px)
-3. Desktop (equal or grather than 1440px)
+2. Tablet view `dark mode` (from 600px to 1439px).
+3. Desktop (equal or grather than 1440px).
 
 
 > ## Contact me
