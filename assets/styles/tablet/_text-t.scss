@@ -1,0 +1,134 @@
+$plexSans: 'IBM Plex Sans',
+sans-serif;
+$plexMono: 'IBM Plex Mono',
+sans-serif;
+$plexMonoSemiBold:'IBM Plex Sans',
+sans-serif;
+$plexMonoMedium:'IBM Plex Mono',
+Medium;
+@mixin a-t-style {
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-decoration: none;
+    &:hover {
+        color: #00F3BB;
+        text-decoration: underline;
+    }
+}
+
+@mixin button-t-style {
+    @include button-text-t-style;
+    background-color: #BB86FC;
+    border: none;
+    display: block;
+    height: 56px;
+    margin-top: 56px;
+    width: 226px;
+    &:hover {
+        transform: translate3d(10px, 10px, 10px);
+        box-shadow: -10px -10px 0px 0px silver;
+    }
+}
+
+@mixin button-text-t-style {
+    @include white-t-style;
+    @include bold-t-style;
+    font-family: $plexMonoMedium;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+
+@mixin bold-t-style {
+    font-weight: bold;
+    text-align: center;
+}
+
+@mixin p-t-style {
+    @include white-t-style;
+    font-family: $plexMono;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@mixin title-t-style {
+    @include white-t-style;
+    font-family: $plexSans;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+@mixin hamburguer-t-style {
+    margin-left: 80vw;
+    input[type=checkbox]+label {
+        .close {
+            display: none;
+        }
+        .menu {
+            padding: 0;
+            position: absolute;
+            z-index: -1;
+        }
+        .open {
+            display: flex;
+        }
+        a {
+            font-size: 0;
+        }
+    }
+    input[type=checkbox]:checked+label {
+        padding: 0;
+        .close {
+            display: flex;
+        }
+        .menu {
+            background-color: #0000FE;
+            height: 224px;
+            margin-left: -90vw;
+            margin-top: 5vh;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+        }
+        .open {
+            display: none;
+        }
+        nav {
+            padding: calc(752px - (700px + 28px)) 5vw 0 5vw;
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@mixin h2-t-style {
+    @include title-t-style;
+    background: linear-gradient(to right, #00F3BB, #00F3BB);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    border: 1px #FFFFFF solid;
+    border-radius: 10px;
+    color: #00F3BB;
+    height: 1em;
+    margin: 0.75em 0;
+    padding: 1em 0;
+    transition: background-size 1s 0s;
+    &:hover {
+        background-size: 100% 100%;
+        color: #121212;
+    }
+}
+
+@mixin info-t-style {
+    @include white-t-style;
+    @include bold-t-style;
+    font-family: $plexMonoSemiBold;
+    font-size: 24px;
+    text-align: center;
+}
+
+@mixin white-t-style {
+    color: #FFFFFF;
+    letter-spacing: 0;
+}

@@ -1,0 +1,128 @@
+$plexSans: 'IBM Plex Sans',
+sans-serif;
+$plexMono: 'IBM Plex Mono',
+sans-serif;
+$plexMonoSemiBold:'IBM Plex Sans',
+sans-serif;
+$plexMonoMedium:'IBM Plex Mono',
+Medium;
+@mixin a-m-style {
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-decoration: none;
+    &:hover {
+        color: #00F3BB;
+        text-decoration: line-through;
+    }
+    &:active {
+        color: #060A24;
+        text-decoration: line-through;
+    }
+}
+
+@mixin button-m-style {
+    @include button-text-m-style;
+    background: #00F3BB;
+    border: none;
+    display: block;
+    height: 56px;
+    margin-top: 56px;
+    width: 226px;
+    &:hover {
+        background: linear-gradient(to right, #00F0B8, #0000FE);
+        color: white;
+    }
+}
+
+@mixin button-text-m-style {
+    @include black-m-style;
+    @include bold-m-style;
+    font-family: $plexMonoMedium;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+
+@mixin black-m-style {
+    color: #060A24;
+    letter-spacing: 0;
+}
+
+@mixin bold-m-style {
+    font-weight: bold;
+    text-align: center;
+}
+
+@mixin p-m-style {
+    @include black-m-style;
+    font-family: $plexMono;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@mixin title-m-style {
+    @include black-m-style;
+    font-family: $plexSans;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+@mixin hamburguer-m-style {
+    margin-left: 80vw;
+    input[type=checkbox]+label {
+        .close {
+            display: none;
+        }
+        .menu {
+            padding: 0;
+            position: absolute;
+            z-index: -1;
+        }
+        .open {
+            display: flex;
+        }
+        a {
+            font-size: 0;
+        }
+    }
+    input[type=checkbox]:checked+label {
+        padding: 0;
+        .close {
+            display: flex;
+        }
+        .menu {
+            background-color: #0000FE;
+            height: 224px;
+            margin-left: -90vw;
+            margin-top: 20px;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+        }
+        .open {
+            display: none;
+        }
+        nav {
+            color: white;
+            padding: calc(752px - (700px + 28px)) 5vw 0 5vw;
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@mixin info-m-style {
+    @include black-m-style;
+    @include bold-m-style;
+    font-family: $plexMonoSemiBold;
+    font-size: 24px;
+    text-align: center;
+}
+
+@mixin nav-m-style {
+    @include black-style;
+    font-family: $plexMono;
+    font-size: 16px;
+    line-height: 28px;
+}

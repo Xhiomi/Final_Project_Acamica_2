@@ -1,0 +1,96 @@
+@import "images";
+@import "text";
+@import "class";
+@mixin desktop-style {
+    @include class-style;
+    aside,
+    footer,
+    header {
+        div>p {
+            @include info-style;
+        }
+    }
+    h2 {
+        @include title-style;
+    }
+    nav {
+        @include nav-style;
+    }
+    p {
+        @include p-style;
+    }
+    header {
+        @include nav-foot;
+        div {
+            width: 84%;
+            nav {
+                margin-right: 3.3vw;
+                a {
+                    @include a-style;
+                }
+                &:first-of-type {
+                    padding-left: 100vw;
+                }
+            }
+        }
+        img {
+            @include img-header-style;
+        }
+    }
+    main {
+        padding: 120px 0 0 13.9vw;
+        del,
+        p {
+            margin-right: 10px;
+        }
+        div {
+            &:nth-of-type(1) {
+                p {
+                    max-width: 628px;
+                }
+            }
+            button {
+                @include button-style;
+                width: 226px;
+            }
+        }
+    }
+    section {
+        padding-top: -8px;
+        article {
+            display: flex;
+            &:nth-child(3) {
+                p {
+                    @include info-style;
+                }
+            }
+        }
+    }
+    aside {
+        background: linear-gradient(176deg, white 140px, transparent 140px), linear-gradient(to right, #00009E, #0000D4) no-repeat;
+        display: block;
+        height: 518px;
+        button {
+            @include button-style;
+            width: 345px;
+            margin: auto;
+        }
+        h2 {
+            color: #FFFFFF;
+            padding-bottom: 36px;
+            padding-top: 247px;
+            text-align: center;
+        }
+    }
+    footer {
+        @include nav-foot;
+        margin: auto 6.9vw;
+        a {
+            color: #060A24;
+            text-decoration: none;
+            &:hover {
+                color: #00F3BB;
+            }
+        }
+    }
+}

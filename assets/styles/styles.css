@@ -1,0 +1,605 @@
+#dropdown {
+  display: none; }
+
+@media all and (min-width: 1440px) {
+  body {
+    background: linear-gradient(175deg, white 550px, transparent 550px, transparent 1300px, white 1300px), linear-gradient(to right, #00009E, #0000D4) no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    body p,
+    body h2 {
+      margin: 0;
+      padding: 0;
+      font-weight: normal; }
+    body .movil {
+      display: none; }
+    body .section-frames {
+      padding-top: 191px; }
+      body .section-frames h2 {
+        color: #FFFFFF;
+        padding-bottom: 26px; }
+      body .section-frames iframe {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40.6vw;
+        height: 152px;
+        margin-bottom: 72px; }
+      body .section-frames div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 6.9vw 0 -7vw; }
+    body .article-phone div {
+      width: 464px;
+      padding: 189px 0 0 4.3vw; }
+    body .article-phone h2 {
+      padding-bottom: 24px; }
+    body .article-phone img {
+      width: 31.8%;
+      height: 16.9%;
+      padding-left: 13.9vw; }
+    body .article-images {
+      display: flex;
+      flex-wrap: wrap; }
+      body .article-images h2 {
+        width: 100vw;
+        padding: 64px 0 36px 13.9vw; }
+      body .article-images img {
+        width: 33.3%;
+        height: 9.3%; }
+    body .article-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 64px 13.9% 69px 13.9%; }
+      body .article-icons div {
+        text-align: center;
+        width: 18.1%;
+        height: 3.3%; }
+        body .article-icons div img {
+          display: flex;
+          justify-content: center;
+          width: 104px;
+          height: 104px;
+          margin: auto;
+          padding-bottom: 29px; }
+      body .article-icons h2 {
+        width: 100vw;
+        padding-bottom: 56px; }
+    body .hello {
+      color: #060A24;
+      letter-spacing: 0;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 64px;
+      line-height: 80px; }
+      body .hello span {
+        color: #0000EC; }
+    body aside div > p,
+    body footer div > p,
+    body header div > p {
+      color: #060A24;
+      letter-spacing: 0;
+      font-weight: bold;
+      text-align: center;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 24px; }
+    body h2 {
+      color: #060A24;
+      letter-spacing: 0;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 64px;
+      font-size: 48px; }
+    body nav {
+      color: #060A24;
+      letter-spacing: 0;
+      font-family: "IBM Plex Mono", sans-serif;
+      font-size: 16px;
+      line-height: 28px; }
+    body p {
+      color: #060A24;
+      letter-spacing: 0;
+      font-family: "IBM Plex Mono", sans-serif;
+      font-size: 16px;
+      line-height: 28px;
+      line-height: 24px; }
+    body header {
+      display: flex;
+      height: 80px; }
+      body header div {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%; }
+      body header nav,
+      body header a {
+        align-items: center;
+        display: flex;
+        margin: auto 1.25vw; }
+      body header p {
+        margin: auto;
+        width: 100%; }
+      body header div {
+        width: 84%; }
+        body header div nav {
+          margin-right: 3.3vw; }
+          body header div nav a {
+            color: #060A24;
+            letter-spacing: 0;
+            text-decoration: none; }
+            body header div nav a:hover {
+              color: #00F3BB;
+              text-decoration: line-through; }
+          body header div nav:first-of-type {
+            padding-left: 100vw; }
+      body header img {
+        align-items: center;
+        width: 36px;
+        height: 100%;
+        padding-left: 6.9vw; }
+    body main {
+      padding: 120px 0 0 13.9vw; }
+      body main del,
+      body main p {
+        margin-right: 10px; }
+      body main div:nth-of-type(1) p {
+        max-width: 628px; }
+      body main div button {
+        color: #060A24;
+        letter-spacing: 0;
+        font-weight: bold;
+        text-align: center;
+        font-family: "IBM Plex Mono", Medium;
+        font-size: 18px;
+        line-height: 24px;
+        background: #00F3BB;
+        border: none;
+        display: block;
+        height: 56px;
+        margin-top: 56px;
+        width: 226px;
+        width: 226px; }
+        body main div button:hover {
+          background: linear-gradient(to right, #00F0B8, #0000FE);
+          color: white; }
+    body section {
+      padding-top: -8px; }
+      body section article {
+        display: flex; }
+        body section article:nth-child(3) p {
+          color: #060A24;
+          letter-spacing: 0;
+          font-weight: bold;
+          text-align: center;
+          font-family: "IBM Plex Sans", sans-serif;
+          font-size: 24px; }
+    body aside {
+      background: linear-gradient(176deg, white 140px, transparent 140px), linear-gradient(to right, #00009E, #0000D4) no-repeat;
+      display: block;
+      height: 518px; }
+      body aside button {
+        color: #060A24;
+        letter-spacing: 0;
+        font-weight: bold;
+        text-align: center;
+        font-family: "IBM Plex Mono", Medium;
+        font-size: 18px;
+        line-height: 24px;
+        background: #00F3BB;
+        border: none;
+        display: block;
+        height: 56px;
+        margin-top: 56px;
+        width: 226px;
+        width: 345px;
+        margin: auto; }
+        body aside button:hover {
+          background: linear-gradient(to right, #00F0B8, #0000FE);
+          color: white; }
+      body aside h2 {
+        color: #FFFFFF;
+        padding-bottom: 36px;
+        padding-top: 247px;
+        text-align: center; }
+    body footer {
+      display: flex;
+      height: 80px;
+      margin: auto 6.9vw; }
+      body footer div {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%; }
+      body footer nav,
+      body footer a {
+        align-items: center;
+        display: flex;
+        margin: auto 1.25vw; }
+      body footer p {
+        margin: auto;
+        width: 100%; }
+      body footer a {
+        color: #060A24;
+        text-decoration: none; }
+        body footer a:hover {
+          color: #00F3BB; } }
+@media all and (min-width: 600px) and (max-width: 1439px) {
+  body {
+    background-color: #121212; }
+    body .movil {
+      display: none; }
+    body * {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      font-weight: normal; }
+    body aside div > p,
+    body footer div > p,
+    body header div > p {
+      color: #FFFFFF;
+      letter-spacing: 0;
+      font-weight: bold;
+      text-align: center;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 24px;
+      text-align: center; }
+    body button {
+      color: #FFFFFF;
+      letter-spacing: 0;
+      font-weight: bold;
+      text-align: center;
+      font-family: "IBM Plex Mono", Medium;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      background-color: #BB86FC;
+      border: none;
+      display: block;
+      height: 56px;
+      margin-top: 56px;
+      width: 226px;
+      margin: 15px 0;
+      width: 100%; }
+      body button:hover {
+        transform: translate3d(10px, 10px, 10px);
+        box-shadow: -10px -10px 0px 0px silver; }
+    body h2 {
+      color: #FFFFFF;
+      letter-spacing: 0;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 36px;
+      line-height: 42px;
+      background: linear-gradient(to right, #00F3BB, #00F3BB);
+      background-repeat: no-repeat;
+      background-size: 0 100%;
+      border: 1px #FFFFFF solid;
+      border-radius: 10px;
+      color: #00F3BB;
+      margin: 0.75em 0;
+      padding: 1em 0;
+      transition: background-size 1s 0s; }
+      body h2:hover {
+        background-size: 100% 100%;
+        color: #121212; }
+    body img {
+      max-width: 100vw;
+      margin: auto; }
+    body p {
+      color: #FFFFFF;
+      letter-spacing: 0;
+      font-family: "IBM Plex Mono", sans-serif;
+      font-size: 14px;
+      line-height: 22px;
+      padding: 10px 0; }
+    body header {
+      border: dotted;
+      border-color: white;
+      box-sizing: border-box;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      padding: 2vh; }
+      body header div {
+        display: flex;
+        justify-content: space-around;
+        width: 85vw; }
+        body header div a {
+          color: #FFFFFF;
+          letter-spacing: 0;
+          text-decoration: none; }
+          body header div a:hover {
+            color: #00F3BB;
+            text-decoration: underline; }
+    body main {
+      border: dotted;
+      border-color: white;
+      box-sizing: border-box;
+      display: block;
+      height: 100%;
+      margin: 30px 0;
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      body main h2 {
+        padding: 1em; }
+      body main iframe {
+        height: 155px;
+        width: 49%; }
+    body section {
+      border: dotted;
+      border-color: white;
+      box-sizing: border-box;
+      margin: 30px 0;
+      padding: 30px 0; }
+      body section article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        body section article:first-child h2 {
+          margin: 30px 0; }
+        body section article h2 {
+          margin: 30px;
+          width: 100%; }
+        body section article img {
+          display: flex;
+          width: 48vw; }
+          body section article img:hover {
+            opacity: 0.6; }
+        body section article div {
+          display: block;
+          max-width: 40%;
+          padding: 2%; }
+          body section article div img {
+            max-width: 32.5%;
+            margin: auto; }
+      body section img {
+        display: flex;
+        margin: auto;
+        margin: 0;
+        width: 115%; }
+    body aside {
+      border: dotted;
+      border-color: white;
+      box-sizing: border-box;
+      display: block;
+      height: 100%;
+      margin: 30px 0;
+      padding: 30px; }
+    body footer {
+      border: dotted;
+      border-color: white;
+      box-sizing: border-box;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      padding: 2vh; }
+      body footer p {
+        width: 100vw; }
+      body footer div {
+        display: flex;
+        justify-content: space-around;
+        width: 100vw; }
+        body footer div a {
+          color: #FFFFFF;
+          text-decoration: none; }
+          body footer div a:hover {
+            color: #00F3BB;
+            transform: scale(2); } }
+@media all and (max-width: 599px) {
+  body {
+    background: linear-gradient(175deg, white 375px, transparent 375px, transparent 1250px, white 1250px), linear-gradient(to right, #00009E, #0000D4) no-repeat;
+    margin: 0;
+    padding: 0 5%; }
+    body img {
+      max-width: 100vw; }
+    body p,
+    body h2 {
+      margin: 0;
+      padding: 0;
+      font-weight: normal; }
+    body .desk {
+      display: none; }
+    body aside div > p,
+    body footer div > p,
+    body header div > p {
+      color: #060A24;
+      letter-spacing: 0;
+      font-weight: bold;
+      text-align: center;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 24px;
+      text-align: center; }
+    body p {
+      color: #060A24;
+      letter-spacing: 0;
+      font-family: "IBM Plex Mono", sans-serif;
+      font-size: 14px;
+      line-height: 22px; }
+    body nav {
+      color: #060A24;
+      letter-spacing: 0;
+      font-family: "IBM Plex Mono", sans-serif;
+      font-size: 16px;
+      line-height: 28px; }
+    body h2 {
+      color: #060A24;
+      letter-spacing: 0;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 36px;
+      line-height: 42px; }
+    body header {
+      display: flex;
+      height: 0.8%; }
+      body header img,
+      body header div {
+        padding-top: 10px; }
+        body header img a,
+        body header div a {
+          color: #FFFFFF;
+          letter-spacing: 0;
+          text-decoration: none; }
+          body header img a:hover,
+          body header div a:hover {
+            color: #00F3BB;
+            text-decoration: line-through; }
+          body header img a:active,
+          body header div a:active {
+            color: #060A24;
+            text-decoration: line-through; }
+      body header div {
+        margin-left: 80vw; }
+        body header div input[type=checkbox] + label .close {
+          display: none; }
+        body header div input[type=checkbox] + label .menu {
+          padding: 0;
+          position: absolute;
+          z-index: -1; }
+        body header div input[type=checkbox] + label .open {
+          display: flex; }
+        body header div input[type=checkbox] + label a {
+          font-size: 0; }
+        body header div input[type=checkbox]:checked + label {
+          padding: 0; }
+          body header div input[type=checkbox]:checked + label .close {
+            display: flex; }
+          body header div input[type=checkbox]:checked + label .menu {
+            background-color: #0000FE;
+            height: 224px;
+            margin-left: -90vw;
+            margin-top: 20px;
+            position: absolute;
+            width: 100%;
+            z-index: 1; }
+          body header div input[type=checkbox]:checked + label .open {
+            display: none; }
+          body header div input[type=checkbox]:checked + label nav {
+            color: white;
+            padding: calc(752px - (700px + 28px)) 5vw 0 5vw; }
+            body header div input[type=checkbox]:checked + label nav a {
+              font-size: 16px; }
+    body main {
+      padding-top: calc(73px - 41px); }
+      body main h2 {
+        max-width: calc(74.3% + 3.1%); }
+      body main p,
+      body main del {
+        padding-top: calc(73px - 44px); }
+      body main div:nth-of-type(1) p {
+        padding-top: calc(173px - (115px + 42px)); }
+      body main div:nth-of-type(1) button {
+        color: #060A24;
+        letter-spacing: 0;
+        font-weight: bold;
+        text-align: center;
+        font-family: "IBM Plex Mono", Medium;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        background: #00F3BB;
+        border: none;
+        display: block;
+        height: 56px;
+        margin-top: 56px;
+        width: 226px;
+        margin-top: calc(275px - (173px + 66px));
+        width: 100%; }
+        body main div:nth-of-type(1) button:hover {
+          background: linear-gradient(to right, #00F0B8, #0000FE);
+          color: white; }
+      body main div:nth-of-type(2) {
+        padding-top: calc(411px - (275px + 48px)); }
+        body main div:nth-of-type(2) h2 {
+          color: #FFFFFF;
+          padding-bottom: calc(474px - (411px + 42px)); }
+        body main div:nth-of-type(2) iframe {
+          height: 155px;
+          margin-bottom: calc(710px - (474px + 225px));
+          width: 100%; }
+    body section {
+      padding-top: calc(1455px - (1182px + 225px)); }
+      body section img {
+        display: flex; }
+      body section article:first-child img {
+        margin: 0 -5vw;
+        width: 100vw; }
+      body section article:first-child h2 {
+        padding-bottom: calc(2093px - (2001px + 84px));
+        padding-top: calc(2001px - (1455px + 519px)); }
+      body section article:nth-child(2) h2 {
+        padding-bottom: calc(2499px - (2401px + 84px));
+        padding-top: calc(2401px - (2093px + 254px)); }
+      body section article:nth-child(2) img {
+        margin: 0 -5vw;
+        width: 110vw; }
+      body section article:nth-child(3) h2 {
+        padding-bottom: calc(4112px - (4004px + 84px));
+        padding-top: calc(4004px - (3713px + 243px)); }
+      body section article:nth-child(3) div img {
+        margin: auto; }
+      body section article:nth-child(3) div p {
+        color: #060A24;
+        letter-spacing: 0;
+        font-weight: bold;
+        text-align: center;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 24px;
+        text-align: center;
+        padding-bottom: calc(4323px - (4242px + 32px));
+        padding-top: calc(4242px - (4125px + 104px));
+        text-align: center; }
+    body aside {
+      background: linear-gradient(175deg, white 80px, transparent 80px), linear-gradient(to right, #00009E, #0000D4) no-repeat;
+      margin-left: -5vw;
+      margin-top: calc((4974px - (4900px + 32px)) - (5038px - (4900px + 32px)));
+      padding-bottom: calc((4974px + 341px) - (5200px + 48px));
+      padding-top: calc(5038px - (4900px + 32px));
+      text-align: center;
+      width: 100vw; }
+      body aside h2 {
+        color: #FFFFFF;
+        padding-left: 5vw;
+        padding-right: 5vw; }
+      body aside button {
+        color: #060A24;
+        letter-spacing: 0;
+        font-weight: bold;
+        text-align: center;
+        font-family: "IBM Plex Mono", Medium;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        background: #00F3BB;
+        border: none;
+        display: block;
+        height: 56px;
+        margin-top: 56px;
+        width: 226px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin: auto;
+        margin-top: calc(5200px - (5038px + 126px));
+        width: 90%; }
+        body aside button:hover {
+          background: linear-gradient(to right, #00F0B8, #0000FE);
+          color: white; }
+    body footer {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      height: calc(((((4974px + 341px) - (5200px + 48px)) / 1.2) * 1.8) + 22px);
+      margin: auto calc(14.7% - 5%); }
+      body footer p {
+        text-align: center;
+        width: 100vw; }
+      body footer div {
+        display: flex;
+        justify-content: space-around;
+        width: 100vw; }
+        body footer div a {
+          color: #060A24;
+          text-decoration: none; }
+          body footer div a:hover {
+            color: #00F3BB; } }
+
+/*# sourceMappingURL=styles.css.map */
