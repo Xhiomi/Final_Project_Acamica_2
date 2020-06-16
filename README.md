@@ -1,4 +1,4 @@
-# First version released on 16 jun 2020
+# First version released on jun 16 2020
 
 Final project for the first Acámica module (CSS)
 **@author Xhiomi**
@@ -14,7 +14,7 @@ Final project for the first Acámica module (CSS)
 
 1. Movil view (less than 600px).
 2. Tablet view `dark mode` (from 600px to 1439px).
-3. Desktop view (equal or grather than 1440px).
+3. Desktop view (equals or grather than 1440px).
 
 
 > ## CONTACT ME
