@@ -1,96 +1,171 @@
-@import "images";
-@import "text";
-@import "class";
 @mixin desktop-style {
-    @include class-style;
-    aside,
-    footer,
     header {
-        div>p {
-            @include info-style;
+        display: flex;
+        height: 5.9vh;
+        .navbar {
+            height: 100%;
         }
-    }
-    h2 {
-        @include title-style;
-    }
-    nav {
-        @include nav-style;
-    }
-    p {
-        @include p-style;
-    }
-    header {
-        @include nav-foot;
-        div {
-            width: 84%;
-            nav {
-                margin-right: 3.3vw;
-                a {
-                    @include a-style;
-                }
-                &:first-of-type {
-                    padding-left: 100vw;
+        .logo {
+            height: 59.1px;
+            width: 59.1px;
+            margin-right: 40.5vw;
+            padding-left: 10.8%;
+            padding-top: 1.5vh;
+        }
+        .desk {
+            height: 5.9vh;
+            position: absolute;
+            right: 10.8vw;
+            a {
+                padding-right: 3vw;
+                text-decoration: none;
+                font-size: 14px;
+                color: #572EE5;
+                letter-spacing: 0;
+                text-align: center;
+                font-weight: bold;
+            }
+            .menu {
+                height: 100%;
+            }
+            .selections {
+                display: inline-block;
+                vertical-align: middle;
+                margin-top: 41px;
+                height: 100%;
+            }
+            .more {
+                display: inline-block;
+                vertical-align: middle;
+                border: 1px solid #572EE5;
+                width: 54px;
+                height: 54px;
+                border-radius: 100%;
+                img {
+                    transform: translate(20px, 20px);
                 }
             }
-        }
-        img {
-            @include img-header-style;
         }
     }
     main {
-        padding: 120px 0 0 13.9vw;
-        del,
-        p {
-            margin-right: 10px;
-        }
-        div {
-            &:nth-of-type(1) {
-                p {
-                    max-width: 628px;
-                }
-            }
-            button {
-                @include button-style;
-                width: 226px;
-            }
-        }
-    }
-    section {
-        padding-top: -8px;
-        article {
-            display: flex;
-            &:nth-child(3) {
-                p {
-                    @include info-style;
-                }
-            }
-        }
-    }
-    aside {
-        background: linear-gradient(176deg, white 140px, transparent 140px), linear-gradient(to right, #00009E, #0000D4) no-repeat;
-        display: block;
-        height: 518px;
-        button {
-            @include button-style;
-            width: 345px;
+        .container {
             margin: auto;
-        }
-        h2 {
-            color: #FFFFFF;
-            padding-bottom: 36px;
-            padding-top: 247px;
+            max-width: 50vw;
+            font-size: 40px;
+            color: #572EE5;
             text-align: center;
+            line-height: 50px;
+            padding-top: 4.9vh;
+        }
+        .main-section {
+            width: 100%;
+            margin: auto;
+            .main-image {
+                width: fit-content;
+                margin: auto;
+            }
+        }
+        .search-bar {
+            width: 100%;
+            border: solid 1px #572EE5;
+            border-radius: 50px;
+            height: 50px;
+            transform: translateY(-21%);
+            img {
+                padding-top: 1.3vh;
+                position: absolute;
+                right: 1.3vw;
+            }
+            input {
+                border: none;
+                background: none;
+                height: 100%;
+                width: 57.3%;
+                font-size: 16px;
+                color: #000000;
+                text-align: left;
+                left: 3.8vw;
+                position: absolute;
+            }
+        }
+        .trendings {
+            margin: 4.8vh 0 6.2vh 0;
+            font-size: 18px;
+            color: #572EE5;
+            text-align: center;
+            line-height: 25px;
+            span {
+                font-weight: bold;
+            }
+        }
+        .carrousel {
+            background: #F3F5F8;
+            height: 42.1vh;
+            text-align: center;
+            .arrow {
+                position: absolute;
+                transform: translateY(calc((18.1vh / 2) - 20px));
+                width: 40px;
+                height: 40px;
+                img {
+                    width: 8px;
+                    height: 14px
+                }
+            }
+            .back {
+                left: 5vw;
+                img {
+                    transform: scaleX(-1);
+                }
+            }
+            .next {
+                right: 5vw;
+            }
+            .carrousel-images {
+                transform: translateX(-15px);
+                display: inline-block;
+                img {
+                    margin-left: 2vw;
+                    width: 24.8vw;
+                    height: 18.1vh;
+                }
+            }
+            .carrousel-text {
+                padding: 4.4vh 0 3.5vh 0;
+                font-size: 18px;
+                color: #000000;
+            }
+            .carrousel-title {
+                font-size: 25px;
+                color: #572EE5;
+                line-height: 30px;
+                padding-bottom: 0.8vh;
+                font-weight: bold;
+            }
         }
     }
     footer {
-        @include nav-foot;
-        margin: auto 6.9vw;
-        a {
-            color: #060A24;
-            text-decoration: none;
-            &:hover {
-                color: #00F3BB;
+        height: 7.6vh;
+        //margin: 0 10.8vw;
+        p,
+        div,
+        nav {
+            display: inline-block;
+        }
+        nav {
+            margin-top: 3.3vh;
+            p {
+                padding-left: 10.8vw;
             }
+            a {
+                padding-left: 1.3vw;
+            }
+        }
+        p:last-child {
+            margin-top: 3.3vh;
+            position: absolute;
+            right: 10.8vw;
+            ;
         }
     }
 }

@@ -1,11 +1,3 @@
-$plexSans: 'IBM Plex Sans',
-sans-serif;
-$plexMono: 'IBM Plex Mono',
-sans-serif;
-$plexMonoSemiBold:'IBM Plex Sans',
-sans-serif;
-$plexMonoMedium:'IBM Plex Mono',
-Medium;
 @mixin a-m-style {
     color: #FFFFFF;
     letter-spacing: 0;
@@ -20,57 +12,13 @@ Medium;
     }
 }
 
-@mixin button-m-style {
-    @include button-text-m-style;
-    background: #00F3BB;
-    border: none;
-    display: block;
-    height: 56px;
-    margin-top: 56px;
-    width: 226px;
-    &:hover {
-        background: linear-gradient(to right, #00F0B8, #0000FE);
-        color: white;
-    }
-}
-
-@mixin button-text-m-style {
-    @include black-m-style;
-    @include bold-m-style;
-    font-family: $plexMonoMedium;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-}
-
-@mixin black-m-style {
-    color: #060A24;
-    letter-spacing: 0;
-}
-
-@mixin bold-m-style {
-    font-weight: bold;
-    text-align: center;
-}
-
-@mixin p-m-style {
-    @include black-m-style;
-    font-family: $plexMono;
-    font-size: 14px;
-    line-height: 22px;
-}
-
-@mixin title-m-style {
-    @include black-m-style;
-    font-family: $plexSans;
-    font-size: 36px;
-    line-height: 42px;
-}
-
 @mixin hamburguer-m-style {
-    margin-left: 80vw;
+    right: 5vw;
+    position: absolute;
     input[type=checkbox]+label {
         .close {
+            //padding-top: 5.8vh;
+            padding-top: 52px;
             display: none;
         }
         .menu {
@@ -79,9 +27,11 @@ Medium;
             z-index: -1;
         }
         .open {
+            //padding-top: 5.8vh;
+            padding-top: 52px;
             display: flex;
         }
-        a {
+        span {
             font-size: 0;
         }
     }
@@ -91,38 +41,33 @@ Medium;
             display: flex;
         }
         .menu {
-            background-color: #0000FE;
-            height: 224px;
-            margin-left: -90vw;
-            margin-top: 20px;
+            background-color: rgba(87, 46, 229, 0.90);
+            height: 100vh;
+            margin-left: -93vw;
+            margin-top: 34px;
             position: absolute;
-            width: 100%;
+            width: 100vw;
             z-index: 1;
+            span:nth-child(even) {
+                border-bottom: 1px solid white;
+                display: block;
+                height: 1px;
+                margin: auto;
+                width: 10vw;
+            }
         }
         .open {
             display: none;
         }
-        nav {
+        span {
             color: white;
-            padding: calc(752px - (700px + 28px)) 5vw 0 5vw;
-            a {
+            text-align: center;
+            span:nth-child(odd) {
+                display: block;
                 font-size: 16px;
+                margin: auto;
+                padding: 4vh 0 1vh 0;
             }
         }
     }
-}
-
-@mixin info-m-style {
-    @include black-m-style;
-    @include bold-m-style;
-    font-family: $plexMonoSemiBold;
-    font-size: 24px;
-    text-align: center;
-}
-
-@mixin nav-m-style {
-    @include black-style;
-    font-family: $plexMono;
-    font-size: 16px;
-    line-height: 28px;
 }

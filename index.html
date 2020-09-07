@@ -4,110 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/styles.css">
-    <script src="https://kit.fontawesome.com/a53cc7133a.js" crossorigin="anonymous"></script>
     <title>Podcast</title>
 </head>
 
 <body>
     <header>
-        <img src="./assets/img/logo.svg" alt="logo">
-        <div class="desk menu">
-            <nav><a href="#1">EPISODIOS</a></nav>
-            <nav><a href="#2">NOSOTROS</a></nav>
-            <nav><a href="#3">ENTREVISTAS</a></nav>
-            <nav><a href="#4">TÓPICOS</a></nav>
+        <img class="logo light-theme-element hidden" src="./assets/img/logo-mobile.svg" alt="logo">
+        <img class="logo dark-theme-element hidden" src="./assets/img/logo-desktop-modo-noc.svg" alt="logo">
+        <div class="desk">
+            <div class="menu hamburguer">
+                <div class="selections">
+                    <input id="switch-theme-desk" type="checkbox" class="hidden" name="mode">
+                    <label for="switch-theme-desk">
+                        <a>
+                            MODO NOCTURNO
+                        </a>
+                    </label>
+                    <a>FAVORITOS</a>
+                    <a>MIS GIFOS</a>
+                </div>
+                <div class="more">
+                    <img src="./assets/img/button-crear-gifo.svg" alt="more">
+                </div>
+            </div>
         </div>
-        <div>
-            <input id="dropdown" type="checkbox" style="display:none;">
+        <div class="hamburguer">
+            <input id="dropdown" type="checkbox" class="hidden">
             <label for="dropdown" class="dropdown">
-                    <i class="fas fa-times movil close"></i>
-                    <i class="fas fa-bars movil open"></i>
-                    <div class="movil menu">
-                        <nav><a href="#1">EPISODIOS</a></nav>
-                        <nav><a href="#2">NOSOTROS</a></nav>
-                        <nav><a href="#3">ENTREVISTAS</a></nav>
-                        <nav><a href="#4">TÓPICOS</a></nav>
-                    </div>
-                </label>
+                <img class="fas fa-times movil close" src="./assets/img/button-close.svg" alt="burger">
+                <img class="fas fa-bars movil open" src="./assets/img/burger.svg" alt="burger">
+                <span class="movil menu">
+                    <span>
+                        <input id="switch-theme-movil" type="checkbox" class="hidden" name="mode">
+                        <label for="switch-theme-movil">
+                            Modo Nocturno
+                        </label>
+            </span>
+            <span></span>
+            <span>Favoritos</span>
+            <span></span>
+            <span>Mis GIFOS</span>
+            <span></span>
+            </span>
+            </label>
         </div>
     </header>
     <main>
-        <h2 class="hello">Hello <del>world</del> pale blue dot<span>.</span></h2>
-        <div>
-            <p class="desk">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
-            <p class="movil">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
-            <button>CONOCÉ MÁS</button>
-        </div>
-        <div class="section-frames">
-            <h2 id="1">Episodios</h2>
-            <div>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/5mddqHiI96V0ZMdMidn3WW" allow="encrypted-media"></iframe>
+        <div id="home">
+            <div class="container">
+                <div class="main-section">
+                    <p>Inspírate, busca, guarda, y crea los mejores <span class="main-text-gifos">GIFOS</span></p>
+                    <div class="main-image">
+                        <img src="./assets/img/ilustra_header.svg" alt="principal_image">
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Busca GIFOS y más">
+                    <img class="logo light-theme-element hidden" src="./assets/img/icon-search.svg" alt="search icon">
+                    <img class="logo dark-theme-element hidden" src="./assets/img/icon-search-mod-noc.svg" alt="search icon">
+                </div>
+                <div class="trendings">
+                    <p>
+                        <span>Trending:</span><br> Reactions, Entertainment, Sports, Stickers, Artists
+                    </p>
+                </div>
             </div>
+            <div class="carrousel">
+                <div class="carrousel-text">
+                    <span class="carrousel-title">Trending GIFOS</span>
+                    <p>
+                        Mira los últimos <span>GIFOS de nuestra comunidad.</span>
+                    </p>
+                </div>
+                <div class="gifos">
+                    <button class="arrow back">
+                        <img class="back-arrow" src="./assets/img/button-right.svg" alt="back">
+                    </button>
+                    <div class="carrousel-images">
+                        <img src="https://image.winudf.com/v2/image/Y29tLkhEV2FsbHBhcGVyLmN1dGVjYXRjX3NjcmVlbl83XzE1MjQzNzk3MDNfMDMw/screen-7.jpg?fakeurl=1&type=.jpg" alt="gifs">
+                        <img class="desk" src="https://image.winudf.com/v2/image/Y29tLkhEV2FsbHBhcGVyLmN1dGVjYXRjX3NjcmVlbl83XzE1MjQzNzk3MDNfMDMw/screen-7.jpg?fakeurl=1&type=.jpg" alt="gifs">
+                        <img class="desk" src="https://image.winudf.com/v2/image/Y29tLkhEV2FsbHBhcGVyLmN1dGVjYXRjX3NjcmVlbl83XzE1MjQzNzk3MDNfMDMw/screen-7.jpg?fakeurl=1&type=.jpg" alt="gifs">
+                    </div>
+                    <button class="arrow next">
+                        <img class="next-arrow" src="./assets/img/button-right.svg" alt="next">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="favourites" class="hidden">
+            <img src="./assets/img/icon-favoritos.svg" alt="favourites-icon">
+            <p>Favoritos</p>
+            <div>
+                <div id="favourite-items" class="hidden">
+                    <img src="" alt="">
+                </div>
+                <div id="favourite-empty" class="hidden"></div>
+            </div>
+            <button></button>
+        </div>
+        <div id="my-gifos" class="hidden">
+
         </div>
     </main>
-    <section>
-        <article class="article-phone">
-            <img src="./assets/img/phone.png" alt="Phone image.">
-            <div>
-                <h2 id="2">De dónde venimos</h2>
-                <p class="desk">Our posturings, our imagined self-importance, delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br><br> Our planet is a lonely speck in the great enveloping cosmic dark. In our
-                    obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
-                </p>
-                <p class="movil">
-                    Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br><br> Our planet is a lonely speck in the great enveloping cosmic dark.
-                    In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
-                </p>
-            </div>
-        </article>
-        <article class="article-images">
-            <h2 id="3">Invitadas/os estelares</h2>
-            <img src="./assets/img/grace-hopper.png" alt="Grace Hooper.">
-            <img src="./assets/img/Katie-Bouman.png" alt="Katie Bouman.">
-            <img src="./assets/img/Margaret_Hamilton.png" alt="Margaret Hamilton.">
-            <img src="./assets/img/Univac.png" alt="An E.R.A.Univac 1103 computer in the 1950s.">
-            <img src="./assets/img/Eniac.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer.">
-            <img src="./assets/img/susan-kare.png" alt="Susan Kare.">
-        </article>
-        <article class="article-icons">
-            <h2 id="4">Algunos de nuestros temas</h2>
-            <div>
-                <img src="./assets/img/icon1.svg" alt="Trabajo remoto.">
-                <p>Trabajo remoto</p>
-            </div>
-            <div>
-                <img src="./assets/img/icon2.svg" alt="Repensando la programación">
-                <p>Repensando la programación</p>
-            </div>
-            <div>
-                <img src="./assets/img/icon3.svg" alt=".Bases del código">
-                <p>Bases del código</p>
-            </div>
-            <div>
-                <img src="./assets/img/icon4.svg" alt=".Seguridad informática">
-                <p>Seguridad informática</p>
-            </div>
-        </article>
-    </section>
-    <aside>
-        <h2>¿Querés las últimas novedades?</h2>
-        <button>ESCUCHÁ LOS EPISODIOS</button>
-    </aside>
     <footer>
-        <p>© 2019— Hello blue pale dot </p>
-        <div>
-            <a class="fab fa-spotify" href="https://www.spotify.com/" target="_blank" rel="noopener noreferrer"></a>
-            <a class="fab fa-instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"></a>
-            <a class="fab fa-twitter" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"></a>
-            <a class="fab fa-facebook" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"></a>
-            <a class="fab fa-telegram" href="https://www.telegram.com/" target="_blank" rel="noopener noreferrer"></a>
-        </div>
+        <nav>
+            <p>Compartir en:</p>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./assets/img/icon_facebook.svg" alt="facebook">
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img src="./assets/img/icon-twitter.svg" alt="twitter">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="./assets/img/icon_instagram.svg" alt="instagram">
+                </a>
+            </div>
+        </nav>
+        <p>© GIFOS 2020 All Rights Reserved.</p>
     </footer>
+    <script type="module" src="./assets/scripts/main.js"></script>
 </body>
 
 </html>

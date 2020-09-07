@@ -1,0 +1,33 @@
+@mixin dark-theme {
+    .light-theme {
+        background: #fff;
+    }
+    .dark-theme {
+        background: #37383C;
+        .more,
+        .search-bar {
+            border: solid 1px #FFFFFF !important;
+        }
+        a,
+        p,
+        span {
+            color: #FFFFFF !important;
+        }
+        .carrousel {
+            background: #222326;
+        }
+        .main-text-gifos {
+            color: #5ED7C6 !important;
+        }
+        .more {
+            background: #fff;
+        }
+    }
+    .transition,
+    .transition *,
+    .transition *:before,
+    .transition *:after {
+        transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms!important;
+        //transition-delay: 0!important;
+    }
+}

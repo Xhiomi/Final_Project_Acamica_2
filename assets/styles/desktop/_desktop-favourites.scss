@@ -1,0 +1,16 @@
+@mixin favourite-style {
+    #favourites {
+        text-align: center;
+        p {
+            //font-family: ProximaNova-Bold;
+            font-size: 30px;
+            color: #572EE5;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+        }
+        img {
+            margin: 0.6vh 0 0.3vh 0;
+        }
+    }
+}
